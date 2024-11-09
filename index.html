@@ -1,0 +1,357 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="w-full p-2 flex justify-between items-center bg-blue-400">
+        <button>
+            <img class="w-8 h-8" src="./assets/img/burger-bar.png" alt="menu">
+        </button>
+        <button>
+            <img class="w-28" src="https://sixossoft.com/assets/images/logo/logo-sixos.svg" alt="">
+        </button>
+        <button class="w-8 h-8 bg-white rounded-lg">
+
+        </button>
+    </header>
+
+    <div class="body px-2">
+        <div class="search-section h-8 flex items-center gap-1 mt-2">
+            <div class="input-group h-full">
+                <input placeholder="Tìm kiếm thông tin" type="text"
+                    class="form-control h-full placeholder:opacity-75 border-[1px] border-slate-400/60 "
+                    aria-label="Text input with dropdown button">
+                <button
+                    class="btn btn-outline-secondary dropdown-toggle outline-none border-none ring-1 ring-black/30 ring-inset"
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <button class="search-btn h-full px-2 rounded-md ring-1 ring-black/30 ml-[1px] ring-inset">
+                <img class="w-6 h-4 opacity-75" src="./assets/img/search-interface-symbol.png" alt="search-icon">
+            </button>
+            <button class="plus-btn p-2 rounded-md bg-blue-500">
+                <img class="w-6 h-4 text-white" src="./assets/img/plus.png" alt="plus-btn">
+            </button>
+            <button class="plus-btn p-2 rounded-md bg-green-500">
+                <img class="w-6 h-4 text-white" src="./assets/img/menu.png" alt="plus-btn">
+            </button>
+        </div>
+
+        <div class="table-section mt-3 ring-1 w-full ring-black/30 rounded-md overflow-x-auto">
+            <table class="table w-full ">
+                <thead class="table-light">
+                    <tr>
+                        <th class="text-nowrap">Tên nhóm dịch vụ</th>
+                        <th class="text-nowrap">Mã nhóm in</th>
+                        <th class="text-nowrap">Tên nhóm dịch vụ BHYT</th>
+                        <th class="text-nowrap">Khoa</th>
+                        <th class="text-nowrap">Nhóm chi phí</th>
+                        <th class="text-nowrap">Mã loại CLS</th>
+                        <th class="text-nowrap sticky right-0 z-1">Tuỳ chọn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap">Điện não</td>
+                        <td class="text-nowrap sticky right-0 z-1 flex items-center gap-3 mx-2 mt-[4px]">
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/edit.png" alt="edit-btn">
+                            </button>
+                            <button class="">
+                                <img class="w-4 h-4" src="./assets/img/delete.png" alt="edit-btn">
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="sub-action px-2 mb-2 sticky left-0 flex items-center justify-between">
+                <div class="number-row-section">
+                    <select class="p-2 ring-1 ring-slate-300 rounded-sm" name="" id="">
+                        <option value="">50</option>
+                        <option value="">100</option>
+                        <option value="">150</option>
+                        <option value="">200</option>
+                    </select>
+                </div>
+                <div class="arrow-section flex items-center gap-2">
+                    <button>
+                        <img class="w-6 h-6 transform -scale-x-100" src="./assets/img/rightx2.png" alt="">
+                    </button>
+                    <button>
+                        <img class="w-3 h-3 transform -scale-x-100" src="./assets/img/rightx1.png" alt="">
+                    </button>
+                    <button class="px-2 rounded-sm bg-blue-500 text-white">1</button>
+                    <button>
+                        <img class="w-3 h-3" src="./assets/img/rightx1.png" alt="">
+                    </button>
+                    <button>
+                        <img class="w-6 h-6" src="./assets/img/rightx2.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer mt-4">
+            <div class="grid grid-cols-2 text-slate-600 text-xs font-medium">
+                <p>Đơn vị phối hợp thực hiện</p>
+                <div class="info">
+                    <p>Công ty TNHH phần mềm Vũ Phong</p>
+                    <p>Website: <a class="text-blue-500" href="https://sixossoft.com/">SixOsSoft.com</a></p>
+                    <p>Email: Vuphongsoft@gmail.com</p>
+                    <p>SĐT: 0901.87.88.96</p>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
