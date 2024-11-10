@@ -11,16 +11,45 @@
 </head>
 
 <body>
-    <header class="w-full p-2 flex justify-between items-center bg-blue-400">
-        <button>
+    <header class="w-full p-2 flex justify-between md:justify-normal items-center md:gap-2 bg-blue-700">
+        <!-- Header Mobile -->
+        <button class="md:hidden">
             <img class="w-8 h-8" src="./assets/img/burger-bar.png" alt="menu">
         </button>
-        <button>
-            <img class="w-28" src="https://sixossoft.com/assets/images/logo/logo-sixos.svg" alt="">
+        <button class="">
+            <img class="w-28 md:w-20" src="https://sixossoft.com/assets/images/logo/logo-sixos.svg" alt="">
         </button>
-        <button class="w-8 h-8 bg-white rounded-lg">
+        <button class="md:hidden w-8 h-8 bg-white rounded-lg">
+        </button>
 
+        <!-- Header Desktop -->
+        <button class="hidden md:flex p-2 items-center gap-2 text-white text-sm font-medium">
+            <img class="w-4 h-4" src="./assets/img/dashboard.png" alt="">
+            <p>Quản lý</p>
         </button>
+        <button class="hidden md:flex p-2 items-center gap-2 text-white text-sm font-medium">
+            <img class="w-4 h-4" src="./assets/img/dashboard.png" alt="">
+            <p>Quản lý</p>
+        </button>
+        <button class="hidden md:flex p-2 items-center gap-2 text-white text-sm font-medium">
+            <img class="w-4 h-4" src="./assets/img/dashboard.png" alt="">
+            <p>Quản lý</p>
+        </button>
+        <button class="hidden md:flex p-2 items-center gap-2 text-white text-sm font-medium">
+            <img class="w-4 h-4" src="./assets/img/dashboard.png" alt="">
+            <p>Quản lý</p>
+        </button>
+        <button
+            class="hidden md:flex p-2 flex-1 items-center gap-2 text-blue-800 bg-white rounded-3xl text-sm font-medium">
+            <p class="mx-auto text-nowrap">NHÓM DỊCH VỤ KỸ THUẬT</p>
+        </button>
+        <button class="hidden md:flex p-2 items-center gap-2 text-white text-sm font-medium">
+            <img class="w-4 h-4" src="./assets/img/dashboard.png" alt="">
+        </button>
+        <div class="info-account hidden md:block text-white">
+            <p class="text-xs font-medium">Account</p>
+            <div class="text-sm font-medium">Hoàng Khôi</div>
+        </div>
     </header>
 
     <div class="body px-2">
@@ -31,26 +60,253 @@
                     aria-label="Text input with dropdown button">
                 <button
                     class="btn btn-outline-secondary dropdown-toggle outline-none border-none ring-1 ring-black/30 ring-inset"
-                    type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <div class="dropdown-menu dropdown-menu-end md:w-96 pb-20 w-screen p-3">
+                    <div class="flex flex-col gap-2">
+                        <div class="md:grid md:grid-cols-2 flex flex-col gap-2">
+                            <input
+                                class="p-2 placeholder:text-slate-400 placeholder:text-sm text-sm ring-1 ring-slate-300/70 rounded-md"
+                                placeholder="Theo tên nhóm dịch vụ" type="text">
+                            <input
+                                class="p-2 placeholder:text-slate-400 placeholder:text-sm text-sm ring-1 ring-slate-300/70 rounded-md"
+                                placeholder="Theo tên nhóm dịch vụ" type="text">
+
+                        </div>
+
+                        <div class="md:grid md:grid-cols-2 flex-col gap-2">
+                            <div class="md:flex md:flex-col md:gap-2">
+                                <div class="mt-1 flex items-center gap-2">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Nhóm công khám</label>
+                                </div>
+                                <div class="mt-1 flex items-center gap-2">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Nhóm cận lâm sàng</label>
+                                </div>
+                                <div class="mt-1 flex items-center gap-2">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Nhóm thủ thuật</label>
+                                </div>
+                            </div>
+
+                            <div class="md:flex md:flex-col md:gap-2">
+                                <div class="mt-1 flex items-center gap-2">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Nhóm phẫu thuật</label>
+                                </div>
+                                <div class="mt-1 flex items-center gap-2">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Nhóm khác</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-sm font-medium ">Trạng thái
+                        </p>
+                        <select class="text-slate-800 ring-1 px-2 h-8 ring-slate-600 rounded-md" name="" id="">
+                            <option value="">Đang dùng</option>
+                        </select>
+
+                        <button class="px-4 py-2 mt-1 bg-blue-700 rounded-md text-white font-semibold text-sm">
+                            Tìm kiếm
+                        </button>
+                    </div>
+                </div>
             </div>
             <button class="search-btn h-full px-2 rounded-md ring-1 ring-black/30 ml-[1px] ring-inset">
                 <img class="w-6 h-4 opacity-75" src="./assets/img/search-interface-symbol.png" alt="search-icon">
             </button>
-            <button class="plus-btn p-2 rounded-md bg-blue-500">
+            <button class="plus-btn p-2 rounded-md bg-blue-500" data-toggle="modal" data-target="#addNewGroup">
                 <img class="w-6 h-4 text-white" src="./assets/img/plus.png" alt="plus-btn">
             </button>
-            <button class="plus-btn p-2 rounded-md bg-green-500">
-                <img class="w-6 h-4 text-white" src="./assets/img/menu.png" alt="plus-btn">
+
+            <!-- Modal add new group -->
+            <div class="modal fade" id="addNewGroup" tabindex="-1" role="dialog" aria-labelledby="addNewGroup"
+                aria-hidden="true">
+                <div class="modal-dialog max-w-[700px]" role="document">
+                    <div class="modal-content">
+                        <div class="bg-white rounded-md">
+                            <div class="modal-header flex justify-between sticky top-0 z-10  bg-white p-3">
+                                <h1 class="font-semibold">Thêm nhóm dịch vụ kỹ thuật</h1>
+
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+
+                            <div class="modal-body p-3 mt-2">
+                                <div class="md:grid md:grid-cols-2 md:gap-x-4">
+                                    <div class="flex flex-col gap-3">
+                                        <div>
+                                            <p class="text-sm font-semibold">Mã nhóm dịch vụ</p>
+                                            <input placeholder="Auto"
+                                                class="mt-2 px-2 py-1 w-full placeholder:text-slate-500 placeholder:text-sm ring-1 ring-slate-300 rounded-md"
+                                                type="text">
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-semibold">Tên nhóm dịch vụ</p>
+                                            <input placeholder="Nhập tên nhóm dịch vụ"
+                                                class="mt-2 px-2 py-1 w-full placeholder:text-slate-500 placeholder:text-sm ring-1 ring-slate-300 rounded-md"
+                                                type="text">
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-semibold">Tên nhóm dịch vụ BHYT</p>
+                                            <input placeholder="Nhập tên nhóm dịch vụ BHYT"
+                                                class="mt-2 px-2 py-1 w-full placeholder:text-slate-500 placeholder:text-sm ring-1 ring-slate-300 rounded-md"
+                                                type="text">
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-semibold">Loại thủ thuật phẫu thuật</p>
+                                            <select
+                                                class="mt-2 px-2 py-1 w-full placeholder:text-slate-500 placeholder:text-sm ring-1 ring-slate-300 rounded-md"
+                                                name="" id="">
+                                                <option class="text-slate-300" value="">-- Loại thủ thuật phẫu
+                                                    thuật --
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-3 mb-2 md:mb-4">
+                                        <div>
+                                            <p class="text-sm font-semibold">Khoa</p>
+                                            <select
+                                                class="mt-2 px-2 py-1 w-full placeholder:text-slate-500 placeholder:text-sm ring-1 ring-slate-300 rounded-md"
+                                                name="" id="">
+                                                <option class="text-slate-300" value="">-- Khoa --</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-semibold">Nhóm chi phí</p>
+                                            <select
+                                                class="mt-2 px-2 py-1 w-full placeholder:text-slate-500 placeholder:text-sm ring-1 ring-slate-300 rounded-md"
+                                                name="" id="">
+                                                <option class="text-slate-300" value="">-- Nhóm chi phí --</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-semibold">Mã loại CLS</p>
+                                            <select
+                                                class="mt-2 px-2 py-1 w-full placeholder:text-slate-500 placeholder:text-sm ring-1 ring-slate-300 rounded-md"
+                                                name="" id="">
+                                                <option class="text-slate-300" value="">-- Mã loại CLS --</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-semibold">Số bản in chỉ định</p>
+                                            <input placeholder="Nhập số bản in chỉ định"
+                                                class="mt-2 px-2 py-1 w-full placeholder:text-right placeholder:text-slate-500 placeholder:text-sm ring-1 ring-slate-300 rounded-md"
+                                                type="text">
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-semibold">Mã nhóm in</p>
+                                            <input placeholder="Auto"
+                                                class="mt-2 px-2 py-1 w-full placeholder:text-slate-500 placeholder:text-sm ring-1 ring-slate-300 rounded-md"
+                                                type="text">
+                                        </div>
+                                    </div>
+                                    <div class="mt-1 flex items-center gap-2">
+                                        <input type="checkbox" name="" id="">
+                                        <label for="">Nhóm công khám</label>
+                                    </div>
+                                    <div class="mt-1 flex items-center gap-2">
+                                        <input type="checkbox" name="" id="">
+                                        <label for="">Nhóm cận lâm sàn</label>
+                                    </div>
+                                    <div class="mt-1 flex items-center gap-2">
+                                        <input type="checkbox" name="" id="">
+                                        <label for="">Nhóm thủ thuật</label>
+                                    </div>
+                                    <div class="mt-1 flex items-center gap-2">
+                                        <input type="checkbox" name="" id="">
+                                        <label for="">Nhóm phẫu thuật</label>
+                                    </div>
+                                    <div class="mt-1 flex items-center gap-2">
+                                        <input type="checkbox" name="" id="">
+                                        <label for="">Nhóm phương pháo vô cồn</label>
+                                    </div>
+                                    <div class="mt-1 flex items-center gap-2">
+                                        <input type="checkbox" name="" id="">
+                                        <label for="">Nhóm khác</label>
+                                    </div>
+
+
+                                </div>
+                                <button class="w-full mt-4 bg-blue-700 text-white p-2 rounded-lg">Xác nhận
+                                    thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="menu-btn dropdown-toggle dropdown-toggle p-2 rounded-md bg-green-500" id="chooseHeader"
+                data-bs-toggle="dropdown">
+                <img class="w-6 h-4 text-white" src="./assets/img/menu.png" alt="menu-btn">
             </button>
+
+            <!-- Dropdown for choose display table -->
+            <div class="dropdown-menu p-2 w-screen md:max-w-[400px] drop-shadow-lg" aria-labelledby="chooseHeader">
+                <div class="grid grid-cols-2 gap-x-10">
+                    <div class="flex flex-col gap-2">
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Tên nhóm dịch vụ</label>
+                        </div>
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Mã nhóm in</label>
+                        </div>
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="checkbox" name="" id="">
+                            <label class="text-nowrap" for="">Tên nhóm dịch vụ BHYT</label>
+                        </div>
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="checkbox" name="" id="">
+                            <label class="text-nowrap" for="">Loại thủ thuật phẫu thuật</label>
+                        </div>
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Khoa</label>
+                        </div>
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Nhóm chi phí</label>
+                        </div>
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Mã loại CLS</label>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Nhóm công khám</label>
+                        </div>
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Cận lâm sàn</label>
+                        </div>
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Nhóm thủ thuật</label>
+                        </div>
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Nhóm phẫu thuật</label>
+                        </div>
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Nhóm khác</label>
+                        </div>
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Số bản in chỉ định</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="table-section mt-3 ring-1 w-full ring-black/30 rounded-md overflow-x-auto">
@@ -350,8 +606,17 @@
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+            </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <style>
+            .menu-btn .dropdown-toggle::after {
+                display: none;
+            }
+        </style>
 </body>
 
 </html>
